@@ -8,7 +8,7 @@
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
             "forceTimeZone": true,
-            "timeZone": "PST",
+            "timeZone": "America/Los_Angeles",
             "category": "OS/Linux/System",
             "pathExpression": "/var/log/syslog.log",
             "cutoffRelativeTime": "-30d"
@@ -20,7 +20,7 @@
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
             "forceTimeZone": true,
-            "timeZone": "PST",
+            "timeZone": "America/Los_Angeles",
             "category": "OS/Linux/Security",
             "pathExpression": "/var/log/auth.log",
             "cutoffRelativeTime": "-30d"
@@ -32,7 +32,7 @@
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
             "forceTimeZone": true,
-            "timeZone": "PST",
+            "timeZone": "America/Los_Angeles",
             "category": "OS/Linux/System",
             "pathExpression": "/var/log/apt/history.log",
             "cutoffRelativeTime": "-30d"
@@ -44,7 +44,7 @@
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
             "forceTimeZone": true,
-            "timeZone": "PST",
+            "timeZone": "America/Los_Angeles",
             "category": "OS/Linux/System",
             "pathExpression": "/var/log/dpkg.log",
             "cutoffRelativeTime": "-30d"
