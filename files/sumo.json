@@ -2,48 +2,52 @@
     "api.version": "v1",
     "sources": [
         {
-            "name": "linux_auth_logs",
+            "name": "Syslog Logs",
             "sourceType": "LocalFile",
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": false,
-            "timeZone": "UTC",
+            "forceTimeZone": true,
+            "timeZone": "PST",
+            "category": "OS/Linux/System",
+            "pathExpression": "/var/log/syslog.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Auth logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "forceTimeZone": true,
+            "timeZone": "PST",
             "category": "OS/Linux/Security",
-            "pathExpression": "/var/log/auth.log"
+            "pathExpression": "/var/log/auth.log",
+            "cutoffRelativeTime": "-30d"
         },
         {
-            "name": "linux_apt_logs",
+            "name": "Apt Logs",
             "sourceType": "LocalFile",
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": false,
-            "timeZone": "UTC",
+            "forceTimeZone": true,
+            "timeZone": "PST",
             "category": "OS/Linux/System",
-            "pathExpression": "/var/log/apt/history.log"
+            "pathExpression": "/var/log/apt/history.log",
+            "cutoffRelativeTime": "-30d"
         },
         {
-            "name": "linux_dpkg_logs",
+            "name": "Dpkg Logs",
             "sourceType": "LocalFile",
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": false,
-            "timeZone": "UTC",
+            "forceTimeZone": true,
+            "timeZone": "PST",
             "category": "OS/Linux/System",
-            "pathExpression": "/var/log/dpkg.log"
-        },
-        {
-            "name": "linux_syslog_logs",
-            "sourceType": "LocalFile",
-            "automaticDateParsing": true,
-            "multilineProcessingEnabled": false,
-            "useAutolineMatching": true,
-            "forceTimeZone": false,
-            "timeZone": "UTC",
-            "category": "OS/Linux/System",
-            "pathExpression": "/var/log/syslog.log"
+            "pathExpression": "/var/log/dpkg.log",
+            "cutoffRelativeTime": "-30d"
         }
     ]
 }
