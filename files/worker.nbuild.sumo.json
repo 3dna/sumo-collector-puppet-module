@@ -1,0 +1,65 @@
+{
+    "api.version": "v1",
+    "sources": [
+        {
+            "name": "Syslog Logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "forceTimeZone": true,
+            "timeZone": "America/Los_Angeles",
+            "category": "OS/Linux/System",
+            "pathExpression": "/var/log/syslog.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Auth logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "forceTimeZone": true,
+            "timeZone": "America/Los_Angeles",
+            "category": "OS/Linux/Security",
+            "pathExpression": "/var/log/auth.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Apt Logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "forceTimeZone": true,
+            "timeZone": "America/Los_Angeles",
+            "category": "OS/Linux/System",
+            "pathExpression": "/var/log/apt/history.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Dpkg Logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "forceTimeZone": true,
+            "timeZone": "America/Los_Angeles",
+            "category": "OS/Linux/System",
+            "pathExpression": "/var/log/dpkg.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Nbuild App Logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "forceTimeZone": true,
+            "timeZone": "America/Los_Angeles",
+            "category": "Nbuild/Worker/App",
+            "pathExpression": "/srv/nbuild/shared/log/production.log",
+            "cutoffRelativeTime": "-30d"
+        }
+    ]
+}
