@@ -10,7 +10,7 @@
             "forceTimeZone": true,
             "timeZone": "PST",
             "category": "OS/Linux/System",
-            "pathExpression": "/var/log/syslog.log",
+            "pathExpression": "/var/log/syslog",
             "cutoffRelativeTime": "-30d"
         },
         {
