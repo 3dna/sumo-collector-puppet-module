@@ -47,7 +47,7 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "category": "Nbuild/LOG",
+            "category": "Nbuild/APP",
             "pathExpression": "/srv/nbuild/shared/log/production.log",
             "cutoffRelativeTime": "-30d"
         }
