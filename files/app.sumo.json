@@ -7,8 +7,6 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": true,
-            "timeZone": "UTC",
             "category": "OS/Linux/System",
             "pathExpression": "/var/log/syslog.log",
             "cutoffRelativeTime": "-30d"
@@ -19,8 +17,6 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": true,
-            "timeZone": "UTC",
             "category": "OS/Linux/Security",
             "pathExpression": "/var/log/auth.log",
             "cutoffRelativeTime": "-30d"
@@ -31,8 +27,6 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": true,
-            "timeZone": "UTC",
             "category": "OS/Linux/System",
             "pathExpression": "/var/log/apt/history.log",
             "cutoffRelativeTime": "-30d"
@@ -43,10 +37,18 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": true,
-            "timeZone": "UTC",
             "category": "OS/Linux/System",
             "pathExpression": "/var/log/dpkg.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Nbuild logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "category": "Nbuild/LOG",
+            "pathExpression": "/srv/nbuild/shared/log/production.log",
             "cutoffRelativeTime": "-30d"
         }
     ]
