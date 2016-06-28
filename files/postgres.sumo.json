@@ -7,8 +7,6 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": true,
-            "timeZone": "UTC",
             "category": "OS/Linux/System",
             "pathExpression": "/var/log/syslog.log",
             "cutoffRelativeTime": "-30d"
@@ -19,8 +17,6 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": true,
-            "timeZone": "UTC",
             "category": "OS/Linux/Security",
             "pathExpression": "/var/log/auth.log",
             "cutoffRelativeTime": "-30d"
@@ -31,8 +27,6 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": true,
-            "timeZone": "UTC",
             "category": "OS/Linux/System",
             "pathExpression": "/var/log/apt/history.log",
             "cutoffRelativeTime": "-30d"
@@ -43,8 +37,6 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": true,
-            "timeZone": "UTC",
             "category": "OS/Linux/System",
             "pathExpression": "/var/log/dpkg.log",
             "cutoffRelativeTime": "-30d"
@@ -55,10 +47,8 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": true,
-            "timeZone": "UTC",
             "category": "Postgres/Log",
-            "pathExpression": "/var/log/postgresql/postgresql*.log",
+            "pathExpression": "/var/log/postgresql/postgresql.log",
             "cutoffRelativeTime": "-30d"
         },
         {
@@ -67,10 +57,8 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "forceTimeZone": true,
-            "timeZone": "UTC",
             "category": "Postgres/SQL",
-            "pathExpression": "/var/log/postgresql/postgresql.csv*",
+            "pathExpression": "/var/log/postgresql/postgresql.csv",
             "cutoffRelativeTime": "-30d"
         }
     ]
