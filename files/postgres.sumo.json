@@ -67,7 +67,7 @@
             "automaticDateParsing": true,
             "multilineProcessingEnabled": false,
             "useAutolineMatching": true,
-            "category": "Postgres/SQL",
+            "category": "Postgres/pgbouncer",
             "pathExpression": "/var/log/postgresql/pgbouncer.log",
             "cutoffRelativeTime": "-30d"
         }
