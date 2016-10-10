@@ -60,6 +60,16 @@
             "category": "Postgres/SQL",
             "pathExpression": "/var/log/postgresql/postgresql.csv",
             "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "pgbouncer",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "category": "Postgres/SQL",
+            "pathExpression": "/var/log/postgresql/pgbouncer.log",
+            "cutoffRelativeTime": "-30d"
         }
     ]
 }
