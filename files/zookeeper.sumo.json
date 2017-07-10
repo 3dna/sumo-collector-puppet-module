@@ -1,0 +1,75 @@
+{
+    "api.version": "v1",
+    "sources": [
+        {
+            "name": "Syslog Logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "category": "OS/Linux/System",
+            "pathExpression": "/var/log/syslog",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Auth logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "category": "OS/Linux/Security",
+            "pathExpression": "/var/log/auth.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Apt Logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "category": "OS/Linux/System",
+            "pathExpression": "/var/log/apt/history.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Dpkg Logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "category": "OS/Linux/System",
+            "pathExpression": "/var/log/dpkg.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Kafka zookeeper logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "category": "kafka/zookeeper",
+            "pathExpression": "/var/log/zookeeper/zookeeper.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Kafka zookeeper gc logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "category": "kafka/zookeeper",
+            "pathExpression": "/var/log/zookeeper/zookeeper-gc.log",
+            "cutoffRelativeTime": "-30d"
+        },
+        {
+            "name": "Kafka zookeeper state-change logs",
+            "sourceType": "LocalFile",
+            "automaticDateParsing": true,
+            "multilineProcessingEnabled": false,
+            "useAutolineMatching": true,
+            "category": "kafka/zookeeper",
+            "pathExpression": "/var/log/zookeeper/state-change.log",
+            "cutoffRelativeTime": "-30d"
+        }
+    ]
+}
